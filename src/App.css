@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* .App{
+  min-height: 100vh;
+} */
+.homepage{
+min-height: 100vh;
+}
+.homepage main{
+  min-height: 100vh;
+  background: linear-gradient(to right top, #0d3029, #034752);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.homepage .glass{
+  background : white;
+  min-height: 80vh;
+  width: 70%;
+  background: linear-gradient(to right bottom, 
+  rgba(255,255,255, 0.25),
+  rgba(255,255,255,0.60));
+  border-radius: 1rem;
+  backdrop-filter: blur(0.5rem);
+  z-index: 1;
+}
+
+.lilLeif{
+  height: 20%;
+  width: auto;
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  z-index: 0;
+  border-radius: 50%; 
+}
+.leifski{
+  position: absolute;
+  top: 13%;
+  right: 8%;
+  border-radius: 50%;
+  height: 30%;
+  width: auto;
+  backdrop-filter: blur(1rem);
+}
+.homepage .linkedin{
+  display: flex;
+}
+.homepage .profil{
+  border-radius: 50%;
+}
+.homepage .user{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.homepage .user a{
+  text-decoration: none;
+  color: black;
+  
+}
+.homepage .user a:hover{
+  transform: scale(1.25);
+  transition: ease-in-out 1s;
+}
+
+.homepage .infos article{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 200%;
+  text-align: center;
+  width: 66%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* background: red; */
+  margin: auto;
+}
+ .nav a{
+   width: 15%;
+  padding: 1rem;
+  /* background-color: transparent; */
+  /* background: rgb(70, 87, 90); */
+  text-transform:uppercase;
+  color: black;
+  border: none;
+  text-align: center;
+  } 
+  .nav a:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: ease 1s;
+    transform: scale(1.5);
+  }
+ .nav{
+    min-height: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+      background: rgb(70, 87, 90);
+
+ }
+ 
+ .nav a{
+   text-decoration: none;
+ }
+ 
+ .homepage .passion2:hover, .passion4:hover{
+   filter: invert(100%);
+   transform: translateX(-5%);
+   transition: ease .5s;
+ }
+ .homepage .passion3:hover, .passion1:hover{
+  filter: invert(100%);
+  transform: translateX(5%);
+  transition: ease 1.5s;
+
+}
+
+ .homepage .passion1{
+   display: flex;
+   justify-content: flex-end;
+   text-align: center;
+   align-items: center;
+   padding : 1%;
+   background:rgba(255,255,255, 0.25);
+   margin: 1%;
+
+ }
+ .homepage .passion1 img{
+  height: 250px;
+  width: auto;
+  margin: auto;
+ }
+ .homepage .passion1 p{
+   padding : 1%;
+ }
+ .homepage .passion2{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  padding : 1%;
+  background:rgba(255,255,255, 0.25);
+  margin: 1%;
+
+}
+.homepage .passion2 img{
+  height: 250px;
+  width: auto;
+  margin: auto;
+ }
+.homepage .passion2 p{
+   padding : 1%;
+}
+.homepage .passion3{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  padding : 1%;
+  background:rgba(255,255,255, 0.25);
+  margin: 1%;
+
+}
+.homepage .passion3 img{
+  height: 250px;
+  width: auto;
+  margin: auto;
+ }
+.homepage .passion3 p{
+   padding : 1%;
+}
+.homepage .passion4{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  padding : 1%;
+  background:rgba(255,255,255, 0.25);
+  margin: 1%;
+
+}
+.homepage .passion4 img{
+  height: 250px;
+  width: auto;
+  margin: auto;
+ }
+.homepage .passion4 p{
+   padding : 1%;
+}
+.homepage .nav-passion-but{
+  background: black;
+  color: white;
+}
+.reduxCountainer button{
+  width: 10%;
+}
