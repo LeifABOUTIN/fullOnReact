@@ -9,6 +9,7 @@
 } */
 .homepage{
 min-height: 100vh;
+perspective: 2000px;
 }
 .homepage main{
   min-height: 100vh;
@@ -30,7 +31,11 @@ min-height: 100vh;
   backdrop-filter: blur(0.5rem);
   z-index: 1;
 }
-
+#TURN{
+  transform-style: preserve-3d;
+  
+  
+}
 .lilLeif{
   height: 20%;
   width: auto;

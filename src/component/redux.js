@@ -12,7 +12,6 @@ const Redux = () => {
 
     const action = useDispatch();
 
-
     const handleChange = (e) => {
         setUsername(e.target.value)
     }
@@ -35,7 +34,6 @@ const Redux = () => {
                 <input type="submit" value="SUBMIT"/>
             </form>
             <p>You've clicked {clicks} times on this website</p>
-
         </div>
     )
 };

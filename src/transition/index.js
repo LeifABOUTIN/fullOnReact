@@ -18,5 +18,4 @@ export const pageVariants = {
 export const pageTransition = {
     duration: 1,
     type: 'linear',
-    // stiffness: 100,
 }

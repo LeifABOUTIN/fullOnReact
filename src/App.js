@@ -3,6 +3,7 @@ import {
   Route, 
   useLocation,
 } from "react-router-dom";
+import { useEffect } from 'react';
 import { AnimatePresence  } from 'framer-motion';
 import './App.css';
 
@@ -18,14 +19,18 @@ import { clicks } from './actions';
 
 function App() {
 
+  useEffect(()=> {
+    document.querySelector('*').addEventListener('click', event => {
+      action(clicks(event))
+    })
+    return document.querySelector('*').removeEventListener('clicks', event => {
+      action(clicks(event))
+    })
+  },[])
   const action = useDispatch();
-  document.querySelector('*').addEventListener('click', event => {
-    action(clicks(event))
-  })
   const location = useLocation();
   return (
       <div className="App">
-        
         <Nav />
         <AnimatePresence>
           <Switch location={location}>
@@ -39,8 +44,6 @@ function App() {
             </Route>
           </Switch>
         </AnimatePresence>
-
-      
       </div>
   );
 }

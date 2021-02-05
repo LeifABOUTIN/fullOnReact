@@ -12,7 +12,6 @@ const allReducers = combineReducers({
     who: whoAreYouReducer, 
     clicks : clickCountReducer, 
     location: locationReducer, 
-    
 });
 
 export default allReducers;
