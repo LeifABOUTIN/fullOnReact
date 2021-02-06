@@ -22,7 +22,7 @@ const Homepage = () => {
     })
 
     item && item.addEventListener("mouseleave", (e) => {
-        item.style.transform = 'rotateX(0deg) rotateY(0def)';
+        item.style.transform = 'rotateX(0deg) rotateY(0deg)';
     })
     return(
         <motion.div className="homepage"
